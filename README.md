@@ -1,3 +1,2 @@
-# FLITA
-Project for Bomonka
-TRYING MAH BEST
+# Branch thing in action
+Now... What is this all about?
