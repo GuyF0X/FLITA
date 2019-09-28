@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1568451397 source:c:\users\79266\documents\github\flita\hausarbeit\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<windows.h>
+
