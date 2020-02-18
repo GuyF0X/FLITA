@@ -125,7 +125,7 @@ int main()
     }
     i = 0;
     std::cout << std::endl
-              << "Now please input second matrix." << std::endl
+              << "Now please input second " << N2 << " by " << N2 << " matrix." << std::endl
               << std::endl;
     while (i < N2)
     {
@@ -170,6 +170,8 @@ int main()
     {
         for (int j = 0; j < N1; ++j)
         {
+            if (j <= i)
+                continue;
             if (adj_matrix_1[i][j])
             {
                 g1 << i << " -- " << j << ";\n";
@@ -188,6 +190,8 @@ int main()
     {
         for (int j = 0; j < N2; ++j)
         {
+            if (j <= i)
+                continue;
             if (adj_matrix_2[i][j])
             {
                 g2 << i << " -- " << j << ";\n";
@@ -212,6 +216,8 @@ int main()
     {
         for (int j = 0; j < Nr; ++j)
         {
+            if (j <= i)
+                continue;
             if ((i >= N1) or (i >= N2) or (j >= N1) or (j >= N2))
             {
                 adj_matrix_3[i][j] = 0;
